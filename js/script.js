@@ -24,3 +24,16 @@ another <h1> that says “I’m in a div”
 a <p> that says “ME TOO!”
 Hint for this one: after creating the div with createElement, 
 append the <h1> and <p> to it before adding it to the container. */
+const newDiv = document.createElement('div');
+const meToo = document.createElement('p');
+const divH1 = document.createElement('h1');
+newDiv.appendChild(meToo);
+newDiv.appendChild(divH1);
+newDiv.style.cssText = 'borderColor: black; backgroundColor: pink';
+meToo.style.cssText = 'color: brown';
+meToo.textContent = "I'm in a div";
+divH1.textContent = "ME TOO!";
+newDiv.appendChild(meToo);
+newDiv.appendChild(divH1);
+content.appendChild(newDiv);
+
